@@ -1,0 +1,72 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": [
+      "node_modules",
+      "app/entry.client.tsx",
+      "app/entry.server.tsx",
+      "app/entry.worker.ts"
+    ],
+    "include": ["app/root.tsx", "app/**/*.ts", "app/**/*.tsx"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "tab"
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "all": true,
+      "suspicious": {
+        "noReactSpecificProps": "off",
+        "useAwait": "off",
+        "noArrayIndexKey": "off"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "useButtonType": "off"
+      },
+      "style": {
+        "useBlockStatements": "off",
+        "useNamingConvention": "off",
+        "noDefaultExport": "off",
+        "useFilenamingConvention": "off",
+        "noParameterProperties": "off"
+      },
+      "correctness": {
+        "noUndeclaredVariables": "off",
+        "useJsxKeyInIterable": "off"
+      },
+      "complexity": {
+        "noUselessFragments": "off"
+      }
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "tab",
+      "indentWidth": 2
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "double",
+      "indentStyle": "tab",
+      "indentWidth": 2,
+      "semicolons": "asNeeded",
+      "lineWidth": 100,
+      "arrowParentheses": "asNeeded"
+    }
+  }
+}
