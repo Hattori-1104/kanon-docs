@@ -2,13 +2,13 @@ import type { MetaFunction } from "@remix-run/node"
 import { P, Page, Quote } from "~/components/page"
 
 export const meta: MetaFunction = () => {
-	return [{ title: "New Remix App" }, { name: "description", content: "Welcome to Remix!" }]
+	return [{ title: "Kanon Docs" }, { name: "description", content: "かのんの取扱説明書！" }]
 }
 
 const listPrefix = "./"
 
 const warnings: string[] = [
-	"フォントに関して一切苦情を受け付けることにした。",
+	"フォントに関しての苦情を受け付けることにした。",
 	"文章力の不足に寛容になること。",
 	"偏見たっぷりの内容であることを受けいれること。",
 	"本ドキュメントのクオリティ向上のために、逐次フィードバックを行うこと。",
