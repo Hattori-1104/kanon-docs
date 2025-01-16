@@ -29,8 +29,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Meta />
 				<Links />
 			</head>
-			<body className="h-full">
-				<div className="flex flex-col w-full h-full items-center justify-start py-16 gap-16 bg-slate-100 font-serif">
+			<body className="min-w-[800px] min-h-[1132px] bg-slate-100">
+				<div className="flex flex-col w-full h-full items-center justify-start py-16 gap-16 font-serif">
 					{children}
 				</div>
 				<ScrollRestoration />
