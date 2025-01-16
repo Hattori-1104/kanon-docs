@@ -14,6 +14,10 @@ export const links: LinksFunction = () => [
 		rel: "stylesheet",
 		href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
 	},
+	{
+		rel: "stylesheet",
+		href: "https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap",
+	},
 ]
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -26,7 +30,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links />
 			</head>
 			<body className="h-full">
-				<div className="flex flex-col w-full h-full items-center justify-start py-16 gap-16 bg-slate-100">
+				<div className="flex flex-col w-full h-full items-center justify-start py-16 gap-16 bg-slate-100 font-serif">
 					{children}
 				</div>
 				<ScrollRestoration />
