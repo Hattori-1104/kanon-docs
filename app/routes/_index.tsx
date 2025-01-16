@@ -8,10 +8,10 @@ export const meta: MetaFunction = () => {
 const listPrefix = "./"
 
 const warnings: string[] = [
-	"フォントに関しての苦情を受け付けることにした。",
-	"文章力の不足に寛容になること。",
-	"偏見たっぷりの内容であることを受けいれること。",
-	"本ドキュメントのクオリティ向上のために、逐次フィードバックを行うこと。",
+	"フォントに関しての苦情は受け入れろ。",
+	"文章力の不足に寛容にさせろ。",
+	"偏見たっぷりの内容であることを受け入れさせろ。",
+	"本ドキュメントのクオリティ向上のために、逐次フィードバックを強制しろ。",
 ]
 
 const pages: React.ReactNode[] = [
@@ -23,11 +23,7 @@ const pages: React.ReactNode[] = [
 		<P>
 			<div className="flex flex-row py-4">
 				<span>※</span>
-				<span className="">
-					本ドキュメントをお読みになる際に以下の点に
-					<br />
-					ご注意頂きますようよろしくお願い致します。
-				</span>
+				<span className="">本ドキュメントを読む際にこれらの点を留意すること。</span>
 			</div>
 		</P>
 		<P>
